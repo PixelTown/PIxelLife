@@ -44,8 +44,20 @@ class GameScene: SKScene {
                 nodeColor.fontColor = SKColor.whiteColor()
             }
             
+            
+            
+            /*if ([node.name isEqualToString:@"scene button"]) {
+                
+                SKTransition *reveal = [SKTransition fadeWithDuration:3];
+                
+                MyScene *scene = [MyScene sceneWithSize:self.view.bounds.size];
+                scene.scaleMode = SKSceneScaleModeAspectFill;
+                [self.view presentScene:scene transition:reveal];
+            }*/
+            
            // self.addChild(sprite)
             for node in nodesInTouch {
+                
                 var nodeColor: SKLabelNode = node as! SKLabelNode
                 
                 if node.name == "blacksmith" {
@@ -65,6 +77,16 @@ class GameScene: SKScene {
                     nodeColor.fontColor = SKColor.redColor()
                     openCrafting(classSelection)
                 }
+                // to next page
+                else if(node.name == "Next")
+                {
+                    let transition = SKTransition.revealWithDirection(SKTransitionDirection.Left, duration: 1.0)
+                    let scene = ShoppingScene(size: self.scene!.size)
+                    scene.scaleMode = SKSceneScaleMode.AspectFill
+                    self.scene!.view!.presentScene(scene, transition: transition)
+                
+                }
+                
                 
             }
             

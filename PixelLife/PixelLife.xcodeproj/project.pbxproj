@@ -15,6 +15,8 @@
 		161D0B7A1B76EF8B00F828FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161D0B791B76EF8B00F828FA /* Images.xcassets */; };
 		161D0B7D1B76EF8B00F828FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161D0B7B1B76EF8B00F828FA /* LaunchScreen.xib */; };
 		161D0B891B76EF8B00F828FA /* PixelLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D0B881B76EF8B00F828FA /* PixelLifeTests.swift */; };
+		16D018BD1B7AB6DC000C275A /* ShoppingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D018BC1B7AB6DC000C275A /* ShoppingScene.swift */; };
+		16D018BF1B7AB8C7000C275A /* ShoppingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 16D018BE1B7AB8C7000C275A /* ShoppingScene.sks */; };
 		EA2D5E9C1B783AD8007E654E /* CraftingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D5E9B1B783AD8007E654E /* CraftingItems.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		161D0B821B76EF8B00F828FA /* PixelLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161D0B871B76EF8B00F828FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161D0B881B76EF8B00F828FA /* PixelLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLifeTests.swift; sourceTree = "<group>"; };
+		16D018BC1B7AB6DC000C275A /* ShoppingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingScene.swift; sourceTree = "<group>"; };
+		16D018BE1B7AB8C7000C275A /* ShoppingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShoppingScene.sks; sourceTree = "<group>"; };
 		EA2D5E9B1B783AD8007E654E /* CraftingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraftingItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 				161D0B6E1B76EF8B00F828FA /* AppDelegate.swift */,
 				161D0B701B76EF8B00F828FA /* GameScene.sks */,
 				161D0B721B76EF8B00F828FA /* GameScene.swift */,
+				16D018BE1B7AB8C7000C275A /* ShoppingScene.sks */,
+				16D018BC1B7AB6DC000C275A /* ShoppingScene.swift */,
 				161D0B741B76EF8B00F828FA /* GameViewController.swift */,
 				161D0B761B76EF8B00F828FA /* Main.storyboard */,
 				161D0B791B76EF8B00F828FA /* Images.xcassets */,
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				161D0B7D1B76EF8B00F828FA /* LaunchScreen.xib in Resources */,
+				16D018BF1B7AB8C7000C275A /* ShoppingScene.sks in Resources */,
 				161D0B7A1B76EF8B00F828FA /* Images.xcassets in Resources */,
 				161D0B711B76EF8B00F828FA /* GameScene.sks in Resources */,
 				161D0B781B76EF8B00F828FA /* Main.storyboard in Resources */,
@@ -224,6 +231,7 @@
 			files = (
 				161D0B731B76EF8B00F828FA /* GameScene.swift in Sources */,
 				161D0B751B76EF8B00F828FA /* GameViewController.swift in Sources */,
+				16D018BD1B7AB6DC000C275A /* ShoppingScene.swift in Sources */,
 				EA2D5E9C1B783AD8007E654E /* CraftingItems.swift in Sources */,
 				161D0B6F1B76EF8B00F828FA /* AppDelegate.swift in Sources */,
 			);
