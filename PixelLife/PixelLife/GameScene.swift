@@ -13,7 +13,8 @@ class GameScene: SKScene {
     //script references
     var craftingItemsReference: CraftingItems = CraftingItems()
     
-    var classSelection: Int = 0
+    var classSelection: Int = 100
+    var actionSelection: Int = 100
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -36,40 +37,46 @@ class GameScene: SKScene {
             
             let location = touch.locationInNode(self)
             
+            //node reference
             let nodesInTouch = self.nodesAtPoint(location)
-            let nodesInScene = self.children
+            let allNodes = self.children
+            var classNodes = [self.childNodeWithName("blacksmith"),self.childNodeWithName("sorcerer"),self.childNodeWithName("carpenter")]
+            var actionNodes = [self.childNodeWithName("research"),self.childNodeWithName("craft")]
             
-            for node in nodesInScene {
-                var nodeColor: SKLabelNode = node as! SKLabelNode
-                nodeColor.fontColor = SKColor.whiteColor()
-            }
-            
-           // self.addChild(sprite)
+            //node selection
             for node in nodesInTouch {
                 var nodeColor: SKLabelNode = node as! SKLabelNode
                 
-                if node.name == "blacksmith" {
+                if (node.name == "blacksmith") {
+                    classSelection = 0
+                } else if (node.name == "sorcerer") {
                     classSelection = 1
-                    
-                    nodeColor.fontColor = SKColor.redColor()
-                } else if node.name == "sorcerer" {
+                } else if (node.name == "carpenter") {
                     classSelection = 2
-                    nodeColor.fontColor = SKColor.redColor()
-                } else if node.name == "carpenter" {
-                    classSelection = 3
-                    nodeColor.fontColor = SKColor.redColor()
-                } else if node.name == "research" {
-                    nodeColor.fontColor = SKColor.redColor()
+                } else if (node.name == "research") {
+                    actionSelection = 0
                     openResearchTree(classSelection)
-                } else if node.name == "craft" {
-                    nodeColor.fontColor = SKColor.redColor()
+                } else if (node.name == "craft") {
+                    actionSelection = 1
                     openCrafting(classSelection)
+                } else {
+                    
                 }
-                
             }
-            
-            
-            
+            //node color reset
+            for node in allNodes {
+                var nodeColor: SKLabelNode = node as! SKLabelNode
+                nodeColor.fontColor = SKColor.whiteColor()
+            }
+            //node color
+            if (classSelection < classNodes.count) {
+                var selectedClass: SKLabelNode = classNodes[classSelection] as! SKLabelNode
+                selectedClass.fontColor = SKColor.redColor()
+            }
+            if (actionSelection < actionNodes.count) {
+                var selectedAction: SKLabelNode = actionNodes[actionSelection] as! SKLabelNode
+                selectedAction.fontColor = SKColor.redColor()
+            }
             
         }
     }
