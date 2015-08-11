@@ -15,6 +15,7 @@
 		161D0B7A1B76EF8B00F828FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161D0B791B76EF8B00F828FA /* Images.xcassets */; };
 		161D0B7D1B76EF8B00F828FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161D0B7B1B76EF8B00F828FA /* LaunchScreen.xib */; };
 		161D0B891B76EF8B00F828FA /* PixelLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161D0B881B76EF8B00F828FA /* PixelLifeTests.swift */; };
+		EA2D5E9C1B783AD8007E654E /* CraftingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D5E9B1B783AD8007E654E /* CraftingItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		161D0B821B76EF8B00F828FA /* PixelLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161D0B871B76EF8B00F828FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161D0B881B76EF8B00F828FA /* PixelLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLifeTests.swift; sourceTree = "<group>"; };
+		EA2D5E9B1B783AD8007E654E /* CraftingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraftingItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		161D0B6B1B76EF8B00F828FA /* PixelLife */ = {
 			isa = PBXGroup;
 			children = (
+				EA2D5E9B1B783AD8007E654E /* CraftingItems.swift */,
 				161D0B6E1B76EF8B00F828FA /* AppDelegate.swift */,
 				161D0B701B76EF8B00F828FA /* GameScene.sks */,
 				161D0B721B76EF8B00F828FA /* GameScene.swift */,
@@ -221,6 +224,7 @@
 			files = (
 				161D0B731B76EF8B00F828FA /* GameScene.swift in Sources */,
 				161D0B751B76EF8B00F828FA /* GameViewController.swift in Sources */,
+				EA2D5E9C1B783AD8007E654E /* CraftingItems.swift in Sources */,
 				161D0B6F1B76EF8B00F828FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +423,7 @@
 				161D0B8E1B76EF8B00F828FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		161D0B8F1B76EF8B00F828FA /* Build configuration list for PBXNativeTarget "PixelLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				161D0B911B76EF8B00F828FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
