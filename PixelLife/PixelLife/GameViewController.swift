@@ -25,6 +25,8 @@ import SpriteKit
     }
 }*/
 
+// weird
+
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
