@@ -43,23 +43,7 @@ class GameScene: SKScene {
             var classNodes = [self.childNodeWithName("blacksmith"),self.childNodeWithName("sorcerer"),self.childNodeWithName("carpenter")]
             var actionNodes = [self.childNodeWithName("research"),self.childNodeWithName("craft")]
             
-            for node in nodesInScene {
-                var nodeColor: SKLabelNode = node as! SKLabelNode
-                nodeColor.fontColor = SKColor.whiteColor()
-            }
-            
-            
-            
-            /*if ([node.name isEqualToString:@"scene button"]) {
-                
-                SKTransition *reveal = [SKTransition fadeWithDuration:3];
-                
-                MyScene *scene = [MyScene sceneWithSize:self.view.bounds.size];
-                scene.scaleMode = SKSceneScaleModeAspectFill;
-                [self.view presentScene:scene transition:reveal];
-            }*/
-            
-           // self.addChild(sprite)
+            //node selection
             for node in nodesInTouch {
                 
                 var nodeColor: SKLabelNode = node as! SKLabelNode
@@ -76,9 +60,7 @@ class GameScene: SKScene {
                 } else if (node.name == "craft") {
                     actionSelection = 1
                     openCrafting(classSelection)
-                } else {
-                    
-                }
+                } 
                 // to next page
                 else if(node.name == "Next")
                 {
